@@ -6,7 +6,7 @@ const port = 3000
 app.use(express.json());
 
 app.get("/welcome", (req, res) => {
-    res.status(200).json("Halo Febri")
+    res.status(200).json("Halo Febrian")
 })
 
 app.get("/user", async (req, res) => {
