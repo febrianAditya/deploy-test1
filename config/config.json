@@ -16,7 +16,7 @@
   "production": {
     "username": "postgres",
     "password": "IlBXMTTHZsBTfclgUOkNaQNXSRIafNpq",
-    "database": "railway",
+    "database": "railway-febrian-test",
     "host": "postgres.railway.internal",
     "dialect": "postgres",
     "port": "5432",
