@@ -3,10 +3,11 @@ const app = express();
 const { User } = require('./models');
 const port = 3000
 
-app.use(express.json());
+app.use(express.json()) // for parsing application/json
+app.use(express.urlencoded({ extended: true })) 
 
 app.get("/welcome", (req, res) => {
-    res.status(200).json("Halo Febrian")
+    res.status(200).json("Halo Febrianni")
 })
 
 app.get("/user", async (req, res) => {
@@ -20,6 +21,8 @@ app.get("/user", async (req, res) => {
 
 app.post("/resgister", async (req, res) => {
     const { username, password } = req.body;
+    console.log(username, password, "--> gita");
+    
     try {
         const user = await User.create({ username, password });
         res.status(201).json(user);
