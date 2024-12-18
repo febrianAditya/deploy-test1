@@ -7,7 +7,7 @@ app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) 
 
 app.get("/welcome", (req, res) => {
-    res.status(200).json("Halo Febrianni")
+    res.status(200).json("Halo Febrian")
 })
 
 app.get("/user", async (req, res) => {
