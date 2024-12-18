@@ -1,10 +1,11 @@
 {
   "development": {
     "username": "postgres",
-    "password": "localhost",
-    "database": "database_12",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "password": "rglDcFLKwBgYrggxdCQJBujxVIXsOUnl",
+    "database": "railway",
+    "host": "postgres.railway.internal",
+    "dialect": "postgres",
+    "port": "5432"
   },
   "test": {
     "username": "root",
@@ -15,16 +16,10 @@
   },
   "production": {
     "username": "postgres",
-    "password": "ncrQeXNkTcecugorCKBbbFPUBLlshKJU",
+    "password": "rglDcFLKwBgYrggxdCQJBujxVIXsOUnl",
     "database": "railway",
-    "host": "postgres-production-363b.up.railway.app",
+    "host": "junction.proxy.rlwy.net",
     "dialect": "postgres",
-    "port": "5432",
-    "pool": {
-      "max": 5,
-      "min": 0,
-      "acquire": 30000,
-      "idle": 10000
-    }
+    "port": "46267"
   }
 }
